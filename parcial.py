@@ -57,22 +57,13 @@ def request_get():
 def request_post():
   return "HTTP 404 not found",404
 
-@app.route(api_url+'/files/recently',methods=['PUT'])
+@app.route(api_url+'/files/recently_created',methods=['PUT'])
 def request_put_one():
   return "HTTP 404 not found",404
 
-@app.route(api_url+'/files',methods=['DELETE'])
+@app.route(api_url+'/files/recently_created',methods=['DELETE'])
 def request_delete_one():
   return "HTTP 404 not found",404
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
